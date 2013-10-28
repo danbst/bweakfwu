@@ -8,6 +8,7 @@ maintainer: alexander@plaimi.net
 build-type: Simple
 category: Game
 homepage: https://secure.plaimi.net/games/bweakfwu/
+cabal-version:  >= 1.2
 
 Executable bweakfwu
            ghc-options: -O2 -threaded
@@ -17,7 +18,7 @@ Executable bweakfwu
                           Movable
                           Movable.Ball
                           Movable.Paddle
-                          Shape
+                          Rectangle
                           Tangible
                           Time
                           Vector
@@ -26,4 +27,4 @@ Executable bweakfwu
                           Window
                           World
            Main-is: Main.hs
-           Build-Depends: base >= 4, gloss >= 1.8.0.1
+           Build-Depends: base >= 4, gloss >= 1.8.0.1, netwire, mtl, containers
